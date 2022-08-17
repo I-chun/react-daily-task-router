@@ -2,6 +2,8 @@ import './App.css';
 import {
   HashRouter,
   NavLink,
+  Routes,
+  Route
 } from 'react-router-dom';
 
 const Todo = () => {
@@ -35,6 +37,11 @@ function App() {
         </div>
         {/* Routes, Route 練習區 */}
         {/* 練習區 */}
+        <Routes>
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} /> 
+          <Route path="/todo" element={<Register />} />
+        </Routes>
       </HashRouter>
     </div>
   );
